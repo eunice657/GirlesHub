@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  include_once "C:/xampp/htdocs/Soul/Soul/connection.php";
+  include_once "C:/xampp/htdocs/GirlesHub/connection.php";
   if(!isset($_SESSION['unique_id'])){
     header("location: login-user.php");
   }
