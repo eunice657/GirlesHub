@@ -1,7 +1,7 @@
 <?php 
 header("Access-Control-Allow-Origin: *");
 session_start();
-require "connection.php";
+include "connection.php";
 $email = "";
 $errors = array();
 
