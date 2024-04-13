@@ -1,8 +1,8 @@
 <?php 
   session_start();
-  include_once "C:/xampp/htdocs/GirlesHub/connection.php";
+  include_once "connection.php";
   if(!isset($_SESSION['unique_id'])){
-    header("location: login-user.php");
+    header("location: login-user.php"); 
   }
 
   $sql1 = mysqli_query($con, "SELECT * FROM usertable WHERE unique_id = {$_SESSION['unique_id']}");
